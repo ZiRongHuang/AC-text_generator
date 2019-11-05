@@ -1,4 +1,4 @@
-# Restaurant List
+# Text Generator
 
 幹話產生器
 
