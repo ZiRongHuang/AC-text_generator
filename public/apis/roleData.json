@@ -1,0 +1,20 @@
+[
+  {
+    "title": "engineer",
+    "name": "工程師",
+    "image": "https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5668/angry-developer.jpg",
+    "active": false
+  },
+  {
+    "title": "designer",
+    "name": "設計師",
+    "image": "https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5667/angry-designer.jpg",
+    "active": false
+  },
+  {
+    "title": "entrepreneur",
+    "name": "創業家",
+    "image": "https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/5669/angry-founder.jpg",
+    "active": false
+  }
+]

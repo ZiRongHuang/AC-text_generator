@@ -1,0 +1,36 @@
+<!--  ./views/index.handlebars -->
+<div class="container py-5">
+
+  <div class="row">
+    <div class="col-12 col-lg-10 col-xl-8 mx-auto">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">你想對誰說幹話？</h5>
+          <hr>
+          <form method="POST" action="/">
+            <div class="form-group form-row">
+              {{#each roleData}}
+              <div class="col-md-4 text-center">
+                <figure>
+                  <img src="{{this.image}}" alt="{{this.title}}" class="img-fluid" draggable="false">
+                </figure>
+                <input type="radio" name="role" id="role_{{this.title}}" value="{{this.title}}"
+                  {{#if this.active}}checked{{/if}}>
+                <label for="role_{{this.title}}">{{this.name}}</label>
+              </div>
+              {{/each}}
+            </div>
+            <div class="row align-items-end">
+              <div class="col-md-4">
+                <button class="btn btn-success" type="submit">產生幹話</button>
+              </div>
+              <div class="col-md-8 mt-sm-2">
+                <textarea name="" id="" cols="30" rows="10" class="form-control h-50">{{text}}</textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
